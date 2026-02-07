@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  genomic-analysis:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+    command: [ "--input", "data/sample.fasta", "--workers", "2" ]
