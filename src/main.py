@@ -5,7 +5,7 @@ import os
 
 def main():
     parser = argparse.ArgumentParser(description="Bio-Genomic Sequencing Pipeline")
-    parser.add_PH_argument("--input", required=False, default="data/sample.fasta", help="Path to input FASTA file")
+    parser.add_argument("--input", required=False, default="data/sample.fasta", help="Path to input FASTA file")
     parser.add_argument("--output", required=False, default="output/analysis_results.json", help="Path to output JSON file")
     parser.add_argument("--workers", type=int, default=4, help="Number of parallel workers")
 
